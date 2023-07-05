@@ -28,6 +28,7 @@ section {
     border-radius: 10px;
     flex-direction: column;
     overflow: hidden;
+    padding-bottom: 10px;
 }
 
 #add-btn {

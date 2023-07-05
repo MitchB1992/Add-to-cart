@@ -37,9 +37,11 @@ onValue(shoppingListRef, (snapshot) => {
             newElement.textContent = currentItemValue;
 
             newElement.addEventListener("click", () => {
+                const itemName = currentItemValue;
                 remove(ref(database, `shopping-list/${itemId}`))
                     .then(() => {
-                        updateCart.innerHTML = `<b>${inputValue}</b> has been removed from your cart!`;
+                        console.log("Item removed successfully.");
+                        updateCart.innerHTML = `<b>${itemName}</b> has been removed from your cart!`;
                     })
                     .catch((error) => {
                         console.error("Error removing item:", error);
