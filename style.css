@@ -1,0 +1,114 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 235, 235);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #212121;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+section {
+    height: 35%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid 3px #212121;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#add-btn {
+    height: 40px;
+    width: 239px;
+    cursor: pointer;
+    background-color: #fffdf8;
+    transition: ease-out 0.2s;
+    border: 1px solid black;
+}
+
+#input-field {
+    height: 40px;
+    width: 230px;
+    margin-bottom: 10px;
+    background-color: #eef6ff;
+}
+
+img {
+    width: 270px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+input {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+:-moz-placeholder {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    background-color: #fffdf8;
+    padding: 15px;
+    box-shadow: 0px 1px 4px #4f8ba9e6;
+    border-radius: 8px;
+    flex-grow: 1px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #a2c8e3;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    bottom: 7px;
+}
+
+#add-btn:hover {
+    background-color: #a2c8e3;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: ease-in 0.2s;
+
+}
+
+#add-btn:active {
+    background-color: #a2c8e3;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: ease-in 0.2s;
+    transform: scale(0.95);
+}
