@@ -112,11 +112,12 @@ li:hover {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 20px;
     }
 
     img {
         width: 70%;
-        height: 40%;
+        height: 30%;
     }
 
     ul {
