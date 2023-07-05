@@ -69,7 +69,6 @@ ul {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
     align-items: center;
 }
@@ -79,8 +78,11 @@ ul li {
     padding: 15px;
     box-shadow: 0px 1px 4px #4f8ba9e6;
     border-radius: 8px;
-    flex-grow: 1px;
+    flex-grow: 1;
     text-align: center;
+    margin: 5px;
+    flex-basis: calc(33.33% - 10px);
+    /* Adjust the value as per your preference */
 }
 
 li:hover {
@@ -93,16 +95,7 @@ li:hover {
     bottom: 7px;
 }
 
-#add-btn:hover {
-    background-color: #a2c8e3;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    cursor: pointer;
-    color: white;
-    transition: ease-in 0.2s;
-
-}
-
+#add-btn:hover,
 #add-btn:active {
     background-color: #a2c8e3;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -110,9 +103,7 @@ li:hover {
     cursor: pointer;
     color: white;
     transition: ease-in 0.2s;
-    transform: scale(0.95);
 }
-
 
 @media only screen and (max-width: 600px) {
     section {
@@ -130,8 +121,6 @@ li:hover {
 
     ul {
         width: 50%;
-        
-        
     }
 
     #shopping-list {
@@ -141,10 +130,5 @@ li:hover {
     ul li {
         width: 20%;
         font-size: 12px;
-        
     }
-
-    
 }
-```
-```
