@@ -112,3 +112,39 @@ li:hover {
     transition: ease-in 0.2s;
     transform: scale(0.95);
 }
+
+
+@media only screen and (max-width: 600px) {
+    section {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: 70%;
+        height: 40%;
+    }
+
+    ul {
+        width: 50%;
+        
+        
+    }
+
+    #shopping-list {
+        width: 100%;
+    }
+
+    ul li {
+        width: 20%;
+        font-size: 12px;
+        
+    }
+
+    
+}
+```
+```
